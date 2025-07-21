@@ -8,7 +8,7 @@ library(RPostgres)
 db_url <- Sys.getenv("DATABASE_URL")
 
 # Connect to the database
-con <- dbConnect(RPostgres::Postgres(), dsn = db_url)
+con <- dbConnect(RPostgres::Postgres(), dbname = db_url)
 
 #* @apiTitle Real Database API
 #* @apiDescription An API that serves data from a PostgreSQL database.
